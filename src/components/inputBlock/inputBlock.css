@@ -1,0 +1,26 @@
+.input {
+  text-align: center;
+  display: block;
+  padding: 0.3rem;
+  font-size: 3rem;
+  margin: 0.3rem;
+  border: none;
+  border-bottom: 2px solid var(--body-text-color);
+  color: var(--main-color);
+  width: auto;
+  max-width: 4rem;
+  border-radius: 0; /*iOS*/
+}
+
+.input:focus {
+  outline: none;
+}
+
+@media only screen and (max-width: 767px) {
+  .input {
+    width: 2rem;
+    height: 2rem;
+    margin: 0.3rem;
+    font-size: 1.5rem;
+  }
+}
