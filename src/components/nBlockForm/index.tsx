@@ -19,7 +19,7 @@ const nBlockForm = ({ onSubmit, noOfBlocks, disabled }: props) => {
   const [otp, setOTP] = useState([])
 
   useEffect(() => {
-    if (!disabled) {
+    if (!disabled && inputBlockContainer) {
       return inputBlockContainer.current.children[0].focus()
     }
   }, [disabled])
